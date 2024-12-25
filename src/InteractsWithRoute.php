@@ -102,10 +102,10 @@ trait InteractsWithRoute
 
                         $rule->option($routeAnn->options);
 
-						//路由标识
-	                    if (isset($routeAnn->options['name']) && !empty($routeAnn->options['name'])) {
-		                    $rule->name($routeAnn->options['name']);
-	                    }
+			//路由标识
+	                if (isset($routeAnn->options['name']) && !empty($routeAnn->options['name'])) {
+			     $rule->name($routeAnn->options['name']);
+	                }
 
                         //变量规则
                         if (!empty($patternsAnn = $this->reader->getAnnotations($refMethod, Pattern::class))) {
