@@ -4,7 +4,7 @@
 
 ## 安装
 
-> composer require topthink/think-annotation
+> composer require 1532332928/think-annotation
 
 ## 配置
 
